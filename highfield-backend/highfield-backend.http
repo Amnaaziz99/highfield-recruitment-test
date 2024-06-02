@@ -1,0 +1,6 @@
+@HighfieldRecruitment_HostAddress = http://localhost:5122
+
+GET {{HighfieldRecruitment_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

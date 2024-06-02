@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\highfield-backend.props" />
+</Project>
