@@ -22,7 +22,7 @@ namespace HighfieldRecruitment.Controllers
             {
                 var response = await _httpClient.GetStringAsync("https://recruitment.highfieldqualifications.com/api/test");
 
-                var users = JsonSerializer.Deserialize<List<UserEntityDTO>>(response, new JsonSerializerOptions
+                var users = JsonSerializer.Deserialize<List<UserEntity>>(response, new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true 
                 });

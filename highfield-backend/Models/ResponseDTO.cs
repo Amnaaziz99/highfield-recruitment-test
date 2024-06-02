@@ -7,11 +7,11 @@ namespace HighfieldRecruitment.Models
     {
         public ResponseDTO()
         {
-            Users = new List<UserEntityDTO>();
+            Users = new List<UserEntity>();
             Ages = new List<AgePlusTwentyDTO>();
             TopColours = new List<TopColoursDTO>();
         }
-        public List<UserEntityDTO> Users { get; set; }
+        public List<UserEntity> Users { get; set; }
         public List<AgePlusTwentyDTO> Ages { get; set; }
         public List<TopColoursDTO> TopColours { get; set; }
     }
