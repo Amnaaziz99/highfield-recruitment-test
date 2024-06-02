@@ -1,0 +1,39 @@
+<div>
+  <h1>Highfield Recruitment Test - By Amna Aziz</h1>
+  <p>This page displays the results generated from the given data, including the frequency of favourite colours and the
+    ages of users with an additional 20 years.</p>
+
+  <h2>Top Colours</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Colour</th>
+        <th>Frequency</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let colour of topColours">
+        <td>{{ colour.colour }}</td>
+        <td>{{ colour.count }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Ages Plus Twenty</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Original Age</th>
+        <th>Age Plus Twenty</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let age of ages">
+        <td>{{ age.userId }}</td>
+        <td>{{ age.originalAge }}</td>
+        <td>{{ age.agePlusTwenty }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
