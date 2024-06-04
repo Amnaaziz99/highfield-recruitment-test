@@ -34,7 +34,14 @@ namespace HighfieldRecruitment.Controllers
 
                 var ages = users.Select(user =>
                 {
-                    var age = DateTime.Now.Year - user.Dob.Year;
+                    var today = DateTime.Today;
+                    var age = today.Year - user.Dob.Year;
+
+                    if (user.Dob.Date > today.AddYears(-age))
+                    {
+                        age--;
+                    }
+
                     return new AgePlusTwentyDTO
                     {
                         UserId = user.Id,
